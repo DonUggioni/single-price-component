@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --greysh-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Reusable */
+
+.container {
+  padding: 4rem;
+}
+
+/* Card */
+
+.card {
+  margin: 7.2rem 3.2rem;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  max-width: 63.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+}
+
+/* Header */
+
+.header {
+  grid-column: span 2;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  color: var(--cyan);
+  margin-bottom: 2.4rem;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bright-yellow);
+  margin-bottom: 1rem;
+}
+
+.main-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--greysh-blue);
+  line-height: 1.75;
+}
+
+/* Subscription */
+
+.subscription {
+  background-color: var(--cyan);
+}
+
+.subscription-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02rem;
+  margin-bottom: 0.75rem;
+}
+
+.price-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--light-grey);
+  opacity: 0.5;
+}
+
+.subscription-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2.8rem;
+}
+
+/* Button */
+
+.btn {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+}
+
+.btn a:link,
+.btn a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--bright-yellow);
+  border-radius: 5px;
+}
+
+/* About */
+
+.about {
+  background-color: var(--cyan);
+  opacity: 0.75;
+}
+
+.about-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.about-description {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+/* ------ Attribution ------ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media (max-width: 33.5em) {
+  .container {
+    padding: 2.8rem 2.4rem;
+  }
+}
+
+@media (max-width: 31em) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .main-text {
+    font-size: 1.4rem;
+  }
+
+  .subscription-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+}
